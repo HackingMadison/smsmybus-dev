@@ -94,7 +94,7 @@
                   var minutes = routes[i].minutes;
                   var destination = routes[i].destination
 
-      	           if (i>4) {
+      	           if (i>2) {
       	               $("#arrivals").append('<span class="arrival"> ... #'+routeID+' in '+minutes+' min </span>'); 
       	               return true;
       	           } //limit number of rows
