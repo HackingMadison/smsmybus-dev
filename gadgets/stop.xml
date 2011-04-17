@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Metro Estimates" height="200" author="Greg Tracy" author_email="help@smsmybus.com">
+  <ModulePrefs title="Metro Estimates" height="300" scrolling="false" author="Greg Tracy" author_email="help@smsmybus.com">
     <Require feature="dynamic-height"/>
     <Require feature="settitle"/>
   </ModulePrefs>

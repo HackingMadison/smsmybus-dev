@@ -1,0 +1,83 @@
+body {
+		margin:0;
+		padding:0;
+		border:0;			/* This removes the border around the viewport in old versions of IE */
+		height: 100%;
+		font-size: 12px;
+		font-family: Arial;
+		color: black;
+	}
+
+	h1, h2, h3 {
+		margin:.8em 0 .2em 0;
+		padding:0;
+	}
+	p {
+		margin:.4em 0 .8em 0;
+		padding:0;
+	}
+	/* Header styles */
+	#header {
+		clear:both;
+		float:left;
+		width:100%;
+		text-align: center;
+	}
+
+	#clock {
+	    clear: none;
+	    float: right;
+	    padding-right: 25px;
+	}
+
+.direction {
+    font-size: 14px;
+    text-align: center;
+}
+
+.subhead {
+	font-size: 12px;
+	color: #888888;
+}
+
+.arrival {
+	font-size: 12px;
+	color: #888888;
+	padding: 2px;
+	margin: 2px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.coming-soon {
+}
+
+.coming-soon .route-label {
+   font-size: 1.5em;
+   color: black;
+}
+
+.route-label {
+	font-size: 1.5em;
+	color: black;
+}
+
+.destination-abbrev {
+	font-size: 1em;
+	color: black;
+}
+
+.destination-text {
+	font-size: .75em;
+	color: #dddddd;
+	display: none;
+}
+
+.minutes {
+	font-size: 1.5em;
+	color: black;
+}
+
+.coming-soon .minutes {
+   font-size: 1.5em;
+}
