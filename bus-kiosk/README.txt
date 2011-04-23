@@ -1,6 +1,6 @@
 The three files listed here contain the bulk of the functionality to deploy a bus kios that displays arrival estimates for specified Metro stops. However, there are still some tasks that you'll need to do to get it running.
 
-Big thank you to <a href="http://twitter.com/gl33p">Preston Austin</a> for starting this work and doing the vast majority of the HTML and styling.
+Big thank you to Preston Austin for starting this work and doing the vast majority of the HTML and styling.
 
 index.html :: Primary HTML that displays the API data
  @todo fix the path to the jquery-timers library.

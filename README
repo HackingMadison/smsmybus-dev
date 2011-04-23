@@ -1,7 +1,7 @@
 
 This project is a container for SMSMyBus API examples. 
 
-To learn more about the API check out the documentation at <a href="http://www.smsmybus.com/api/">http://www.smsmybus.com/api/</a> and join the google group, <a href="http://groups.google.com/group/smsmybus-dev">http://groups.google.com/group/smsmybus-dev</a>
+To learn more about the API check out the documentation at http://www.smsmybus.com/api/ and join the google group, http://groups.google.com/group/smsmybus-dev
 
 gadgets/ :: Contains examples of Google Gadget code.
 
