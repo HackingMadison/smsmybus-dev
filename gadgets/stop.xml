@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Metro Estimates" height="300" scrolling="false" author="Greg Tracy" author_email="help@smsmybus.com">
+  <ModulePrefs title="Metro Estimates" height="210" scrolling="false" author="Greg Tracy" author_email="help@smsmybus.com">
     <Require feature="dynamic-height"/>
     <Require feature="settitle"/>
   </ModulePrefs>
@@ -33,7 +33,7 @@
           refreshTimes();
           getStopAddress();
 
-          $(this).everyTime("61s",function() {
+          $(this).everyTime("121s",function() {
             refreshTimes();
           });
       });
