@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+    <meta name="description" content="A telephone application that checks Madison bus schedules in real time.">
+    <meta name="keywords" content"Twilio, bus schedule, SMS, google app engine, cloud computing, telephone, telephony, smsmybus">
+    <title>Mother Fools Madison Metro Monitor by SMSmybus</title>
+
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="kiosk.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> 
+    <script type="text/javascript" src="/EDIT-THIS-PATH/jquery.timers-1.2.js"></script>
+    <script type="text/javascript" src="kiosk.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+          getLocation('1505','FIX-ME');
+          getLocation('1878','FIX-ME');
+          setPage();
+      });
+      $(document).everyTime("121s",function() {
+          setPage();
+      });
+
+      function setPage() {
+          update('1505', '<< Eastbound','FIX-ME');
+          update('1878', 'Westbound >>','FIX-ME');
+      }
+    </script>
+</head>
+<body>
+
+<div id="header">
+  <img align="center" src="/img/MF-100.png" height="70" width="100" /> Madison Metro Monitor <img align="center" src="/img/madison_metro.png" alt="Madison Metro" height="70">
+  <div id="clock">clock</div>
+</div>
+<div class="colmask doublepage">
+	<div class="colleft">
+		<div class="col1">
+            <div class="estimates" id="1505-estimates">stuff</div>
+		</div>
+		<div class="col2">
+           <div class="estimates" id="1878-estimates">stuff</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+<p>This is an experimental effort to offer you real-time bus information while you enjoy your coffee!
+Your feedback on the accuracy and value of the information will help improve the service.</p>
+<p>Special thanks to The City of Madison for great buses and for providing the GPS data that powers this service</p>
+   <div id="powered-by">
+     <img src="/img/madison_metro.png" alt="Madison Metro" height="30">
+     <img src="http://www.smsmybus.com/img/gae-logo.png" alt="google app engine" height="30" width="30">
+     <img src="/img/smsmybus.png" alt="smsmybus.com logo" height="30">
+   </div>
+
+   <div id="me">
+    <a href=http://www.gregtracy.com>Greg Tracy - smsmybus</a> - <a href=http://twitter.com/gregtracy>@gregtracy</a><br>
+    <a href=http://imby.info/p/prestonaustin>Preston Austin - this interface</a> - <a href=http://twitter.com/gl33p>@gl33p</a>
+   </div>
+  
+   <div id="contact-container">
+   </div>
+</div>
+
+</body>
+</html>

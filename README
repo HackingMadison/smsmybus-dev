@@ -1,7 +1,8 @@
 
 This project is a container for SMSMyBus API examples. 
 
-To learn more about the API check out the documentation at http://www.smsmybus.com/api/
+To learn more about the API check out the documentation at <a href="http://www.smsmybus.com/api/">http://www.smsmybus.com/api/</a> and join the google group, <a href="http://groups.google.com/group/smsmybus-dev">http://groups.google.com/group/smsmybus-dev</a>
 
-gadgets/ Contains examples of Google Gadget code.
+gadgets/ :: Contains examples of Google Gadget code.
 
+bus-kiosk/ :: Contains a JavaScript example for displaying arrival times for specific stops. This example is also the code running at the Mother Fool's coffehouse.
