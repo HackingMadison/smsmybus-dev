@@ -1,0 +1,42 @@
+application: fixme
+version: 1
+runtime: python
+api_version: 1
+
+derived_file_type:
+- python_precompiled
+
+inbound_services:
+- mail
+- xmpp_message
+
+handlers:
+
+#
+# SMS service
+#
+- url: /sms/.*
+  script: apps/sms.py
+
+#
+# XMPP service
+#
+- url: /_ah/xmpp/.*
+  script: apps/xmpp.py
+
+# 
+# PHONE service
+#
+- url: /phone/.*
+  script: apps/phone.py
+
+#
+# Email service
+#
+- url: /_ah/mail/.+
+  script: apps/electric_mail.py
+  login: admin
+
+- url: /.*
+  script: main.py
+
