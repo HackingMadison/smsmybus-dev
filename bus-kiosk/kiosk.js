@@ -9,7 +9,7 @@ function update(stopID, direction, key) {
 }
 
 function refreshTimes(stopID, Direction, key) {
-    var url = 'http://www.smsmybus.com/api/v1/getarrivals';
+    var url = 'http://api.smsmybus.com/v1/getarrivals';
     $.ajax({
       type: "GET",
       url: url,
@@ -20,7 +20,7 @@ function refreshTimes(stopID, Direction, key) {
 } // refreshTimes
 
 function getLocation(stopID,key) {
-    var url = 'http://www.smsmybus.com/api/v1/getstoplocation';
+    var url = 'http://api.smsmybus.com/v1/getstoplocation';
     $.ajax({
       type: "GET",
       url: url,

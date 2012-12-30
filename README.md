@@ -4,7 +4,7 @@ This project is a container for SMSMyBus API examples.
 
 To learn more about the API check out the documentation at 
 
-http://www.smsmybus.com/api/ 
+http://api.smsmybus.com/
 
 and join the google group, 
 

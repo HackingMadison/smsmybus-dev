@@ -42,7 +42,7 @@ def getarrivals(request, result_count=3):
 
         # package up the API web service call and make the request
         #
-        url = 'http://www.smsmybus.com/api/v1/getarrivals?key=%s&stopID=%s' % (config.METRO_API_KEY,stopID)
+        url = 'http://api.smsmybus.com/v1/getarrivals?key=%s&stopID=%s' % (config.METRO_API_KEY,stopID)
         if routeID is not None:
             url += '&routeID=%s' % routeID
 

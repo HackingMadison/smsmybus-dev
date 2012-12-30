@@ -50,7 +50,7 @@
           var ts = new Date().getTime();
           params = {};
           params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
-    	  gadgets.io.makeRequest("http://www.smsmybus.com/api/v1/getstoplocation?key=googlegadget&stopID="+metro_stopID+"&nocache="+ts,
+    	  gadgets.io.makeRequest("http://api.smsmybus.com/v1/getstoplocation?key=googlegadget&stopID="+metro_stopID+"&nocache="+ts,
                                  addressResponse,
                                  params
                                 );
@@ -60,7 +60,7 @@
           var ts = new Date().getTime();
           params = {};
           params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
-    	  gadgets.io.makeRequest("http://www.smsmybus.com/api/v1/getarrivals?key=googlegadget&stopID="+metro_stopID+"&nocache="+ts,
+    	  gadgets.io.makeRequest("http://api.smsmybus.com/v1/getarrivals?key=googlegadget&stopID="+metro_stopID+"&nocache="+ts,
                                  estimatesResponse,
                                  params
                                 );
