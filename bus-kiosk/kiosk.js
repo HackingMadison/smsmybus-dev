@@ -1,4 +1,7 @@
 
+//var API_BASE = 'http://livemap.msn-transit-api.appspot.com';
+var API_BASE = 'http://api.smsmybus.com';
+
 var metro_direction = [];
 var metro_location = [];
 
@@ -9,7 +12,7 @@ function update(stopID, direction, key) {
 }
 
 function refreshTimes(stopID, Direction, key) {
-    var url = 'http://api.smsmybus.com/v1/getarrivals';
+    var url = API_BASE + '/v1/getarrivals';//'http://api.smsmybus.com/v1/getarrivals';
     $.ajax({
       type: "GET",
       url: url,
@@ -20,7 +23,7 @@ function refreshTimes(stopID, Direction, key) {
 } // refreshTimes
 
 function getLocation(stopID,key) {
-    var url = 'http://api.smsmybus.com/v1/getstoplocation';
+    var url = API_BASE + '/v1/getstoplocation';//'http://api.smsmybus.com/v1/getstoplocation';
     $.ajax({
       type: "GET",
       url: url,
