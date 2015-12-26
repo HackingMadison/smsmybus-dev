@@ -16,8 +16,8 @@
     
     <script type="text/javascript">
       $(document).ready(function() {
-          getLocation('1505','FIX-ME');
-          getLocation('1878','FIX-ME');
+          getLocation('1505','kiosk');
+          getLocation('1878','kiosk');
           setPage();
       });
       $(document).everyTime("121s",function() {
@@ -25,8 +25,8 @@
       });
 
       function setPage() {
-          update('1505', '<< Eastbound','FIX-ME');
-          update('1878', 'Westbound >>','FIX-ME');
+          update('1505', '<< Eastbound','kiosk');
+          update('1878', 'Westbound >>','kiosk');
       }
     </script>
 </head>
